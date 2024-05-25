@@ -19,17 +19,17 @@ from pyrogram import Client as AFK
 from pyrogram.types import Message
 
 
-class Upload_to_Tg:
-    def __init__(self, bot: AFK, m: Message, name: str, file_path, path, Thumb, show_msg: Message, caption: str) -> None:
-        self.bot = bot
-        self.m = m
-        self.name = name
-        self.file_path = file_path
-        self.path = path
-        self.thumb = Thumb
-        self.temp_dir = f"{path}/{name}"
-        self.show_msg = show_msg
-        self.caption = caption
+def __init__(self, bot: AFK, m: Message, name: str, file_path, path, Thumb, show_msg: Message, caption: str) -> None:
+    self.bot = bot
+    self.m = m
+    self.name = name
+    self.file_path = file_path
+    self.path = path
+    self.thumb = Thumb
+    self.temp_dir = f"{path}/{name}"
+    self.show_msg = show_msg
+    self.caption = caption  # Add this line to initialize the 'caption' variable
+
 
     async def get_thumb_duration(self):
         try:
