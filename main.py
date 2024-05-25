@@ -98,8 +98,7 @@ if __name__ == "__main__":
     chat_id = []
     for i, j in zip(Config.GROUPS, Config.AUTH_USERS):
         chat_id.append(i)
-        chat_id.append(j)
-    
+        chat_id.append(j)    
     
     async def main():
         await PRO.start()
