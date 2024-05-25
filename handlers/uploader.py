@@ -18,7 +18,9 @@ from helpers.prog_bar import progress_for_pyrogram
 from pyrogram import Client as AFK
 from pyrogram.types import Message
 
-
+class Upload_to_Tg:
+    # Rest of the class...
+    
 def __init__(self, bot: AFK, m: Message, name: str, file_path, path, Thumb, show_msg: Message, caption: str) -> None:
     self.bot = bot
     self.m = m
